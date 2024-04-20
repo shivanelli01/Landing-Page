@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 120px;
+    display: flex;
+}
+#box1, #box2{
+    border: solid 1px;
+    height: 120px;
+}
+#box1{
+width: 10%;
+
+}
+#box2{
+    width: 90%;
+    background-color: #933993;
+}
+#clgname{
+    color: white;
+    font-size: 57PX;
+    background-color: #933993;
+    font-family: "Jersey 15", sans-serif;
+
+}
+#text1{
+    color: aliceblue;
+    font-size: large;
+}
+#scrolltext{
+    font-weight: bold;
+}
+.navigation{
+    border: solid 1px;
+    height: 55px;
+}
+ul li{
+    border: solid 1px;
+    height: 55px;
+    float: left;
+    width: 160px;
+    text-align: center;
+    line-height: 55px;
+    background-color: #397993;
+    position: relative;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border-radius: 10px;
+
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: rgb(119, 42, 42);
+    font-size: 22px;
+    text-decoration: none;
+}
+ul ul{
+    position: absolute;
+    display: none;
+} 
+ul li:hover>ul{
+    display: block;
+}
+ul li ul li{
+    width: 250px;
+    margin-left: 0px;
+}
+ul li ul li ul{
+    margin-bottom: 50px;    
+}
+ul li ul li ul li{
+    margin-left: 240px;
+
+}
+ul li:hover{
+    background-color: aqua;
+}
+ul li ul li:hover{
+    background-color: #933993;
+}
+ul li ul li ul li:hover{
+    background-color: bisque;
+}
+.arrow{
+    color: red;
+    font-size: 20px;
+}
+.obox{
+    border: solid 0px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1, #in2,#in3{
+    border: solid 1px;
+    height: 400px;
+}
+#in1{
+    width: 650px;
+    background-image: url(vgnt1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 400px;
+    animation-name: imageschanging;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imageschanging{
+    10%{
+        background-image: url(vgnt2.jpg);
+    }
+    20%{
+        background-image: url(vgnt3.jpg);
+    }
+}
+#in2,in3{
+    width: 270px;
+}
+.out{
+    border: solid 1px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
